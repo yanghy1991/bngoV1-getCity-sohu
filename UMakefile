@@ -1,0 +1,7 @@
+objects = cJSON.o city_sohu.o get_city_from_sohu.o
+get_city_from_sohu:$(objects)
+	g++ -o get_city_from_sohu $(objects)
+$(objects): cJSON.h city_sohu.h
+.PHONY:clean
+clean:
+	rm -rf get_city_from_sohu $(objects)

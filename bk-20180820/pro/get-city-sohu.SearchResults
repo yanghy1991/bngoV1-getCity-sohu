@@ -1,0 +1,13 @@
+---- request Matches (13 in 0 files) ----
+City_sohu.c:	//创建URL request信息
+City_sohu.c:	char request[SOHU_COM_BUFSIZE];
+City_sohu.c:    memset(request,0,SOHU_COM_BUFSIZE);
+City_sohu.c:    strcat(request,"GET ");
+City_sohu.c:    strcat(request,GET);
+City_sohu.c:    strcat(request," HTTP/1.1\r\n");//至此为http请求行的信息
+City_sohu.c:    strcat(request,"HOST: ");
+City_sohu.c:    strcat(request,host);
+City_sohu.c:    strcat(request,"\r\n");
+City_sohu.c:    strcat(request,"Cache-Control: no-cache\r\n\r\n");
+City_sohu.c:    //向服务器发送url请求的request
+City_sohu.c:	send_flag = send(socket_fd,request,strlen(request),0);
